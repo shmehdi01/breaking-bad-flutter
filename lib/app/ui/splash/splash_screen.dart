@@ -22,13 +22,9 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> with AppNavigator {
   late StreamSubscription subscription;
 
-  String appName = "";
-  String imageSource = "";
-
   @override
   void initState() {
 
-    init();
     subscription = Stream.periodic(const Duration(milliseconds: 2000))
         .take(1)
         .listen((event) {
@@ -37,14 +33,7 @@ class _SplashScreenState extends State<SplashScreen> with AppNavigator {
     super.initState();
   }
 
-  init()async {
-    final packageInfo = await PackageInfo.fromPlatform();
-    appName = packageInfo.appName;
-    appName.contains("staging") ? imageLogoStaging.source : imageLogo.source;
-    setState(() {
 
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
