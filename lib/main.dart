@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:breakingbad/app/ui/splash/splash_screen.dart';
-import 'package:breakingbad/app/ui/widgets/error_page.dart';
-import 'package:breakingbad/app/utils/mixin_navigator.dart';
 import 'package:breakingbad/app_configs.dart';
 import 'package:breakingbad/resource/color_palette.dart';
 import 'package:breakingbad/resource/theme.dart';
@@ -39,7 +37,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: navigatorKey,
-      title: 'Flutter Demo',
+      title: 'Breaking Bad Demo',
       theme: appTheme,
       home: const SplashScreen(),
     );

@@ -13,9 +13,3 @@ void main() async{
       flavour: 'staging', appName: 'Breaking Bad Staging', logo: 'assets/images/app_logo_staging.jpeg',
       child: MyApp()));
 }
-
-//To Run Staging Flavour
-// flutter run --flavour staging -t lib/main_staging.dart
-
-//To Run Production Flavour
-// flutter run --flavour production -t lib/main.dart

@@ -10,7 +10,6 @@ abstract class BaseBloc<E, S extends BlocState> {
 
   BaseBloc() {
     _eventController.stream.listen((event) {
-      print("EVene $event");
       mapEventToState(event).listen((event) {
         _stateController.add(event);
       });
@@ -18,7 +17,6 @@ abstract class BaseBloc<E, S extends BlocState> {
   }
 
   void dispatchEvent(E event) {
-    print("dispatch $event");
     _eventController.sink.add(event);
   }
 
