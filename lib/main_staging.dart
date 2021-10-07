@@ -8,8 +8,11 @@ import 'package:package_info/package_info.dart';
 import 'app/ui/base/bloc_provider.dart';
 import 'main.dart';
 
-void main() async{
+void main() async {
   runApp(const AppConfigs(
-      flavour: 'staging', appName: 'Breaking Bad Staging', logo: 'assets/images/app_logo_staging.jpeg',
+      flavour: 'staging',
+      appName: 'Breaking Bad Staging',
+      baseUrl: 'https://www.breakingbadapi.com/api/',
+      logo: 'assets/images/app_logo_staging.jpeg',
       child: MyApp()));
 }

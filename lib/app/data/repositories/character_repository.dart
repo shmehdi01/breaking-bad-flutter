@@ -1,12 +1,13 @@
 import 'package:breakingbad/app/data/models/request/pagination.dart';
 import 'package:breakingbad/app/data/models/response/base_response.dart';
+import 'package:breakingbad/app/data/network/api_config.dart';
 import 'package:breakingbad/app/data/network/api_provider.dart';
 import 'package:breakingbad/app/data/network/api_service.dart';
 import 'package:breakingbad/app/ui/characters/models/character.dart';
 
 class CharacterRepository {
   
-  final ApiService apiService = ApiProvider('https://www.breakingbadapi.com/api/');
+  final ApiService apiService = ApiProvider(ApiConfig.instance.baseUrl);
   
   Future<BaseResponse<List<Character>>> getCharacters({required int page, int limit = 10}) {
     return apiService.getCharacters(PaginationRequest(limit: limit, offset: page*limit));

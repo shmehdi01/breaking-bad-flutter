@@ -7,9 +7,12 @@ import 'package:breakingbad/resource/theme.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 
+import 'app/data/network/api_config.dart';
+
 void main() {
   runApp(const AppConfigs(
       flavour: 'production',
+      baseUrl: 'https://www.breakingbadapi.com/api/',
       appName: 'Breaking Bad',
       logo: 'assets/images/app_logo.jpeg',
       child: MyApp()));
@@ -35,6 +38,9 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    final appConfig = AppConfigs.of(context);
+    ApiConfig.initialize(baseUrl: appConfig.baseUrl);
+
     return MaterialApp(
       navigatorKey: navigatorKey,
       title: 'Breaking Bad Demo',
