@@ -9,20 +9,20 @@ A demo flutter app with Breaking Bad Api
     - Bloc for State Management
     - Repository pattern
 
-### Flavour
+### Flavor
     - Staging
     - Production
 
-### How to run Flavour
+### How to run Flavor
   - Run Staging 
   
 
-    `flutter run --flavour staging -t lib/main_staging.dart`
+    `flutter run --flavor staging -t lib/main_staging.dart`
 
 
 - Run Production
 
 
-    `flutter run --flavour production -t lib/main.dart`
+    `flutter run --flavor production -t lib/main.dart`
 
 
