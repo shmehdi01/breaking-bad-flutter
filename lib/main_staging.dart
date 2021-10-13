@@ -10,7 +10,7 @@ import 'main.dart';
 
 void main() async {
   runApp(const AppConfigs(
-      flavour: 'staging',
+      flavor: 'staging',
       appName: 'Breaking Bad Staging',
       baseUrl: 'https://www.breakingbadapi.com/api/',
       logo: 'assets/images/app_logo_staging.jpeg',

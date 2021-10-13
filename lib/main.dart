@@ -11,7 +11,7 @@ import 'app/data/network/api_config.dart';
 
 void main() {
   runApp(const AppConfigs(
-      flavour: 'production',
+      flavor: 'production',
       baseUrl: 'https://www.breakingbadapi.com/api/',
       appName: 'Breaking Bad',
       logo: 'assets/images/app_logo.jpeg',
