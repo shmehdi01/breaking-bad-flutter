@@ -2,7 +2,7 @@ import 'package:breakingbad/app/data/models/request/pagination.dart';
 import 'package:breakingbad/app/data/models/response/base_response.dart';
 import 'package:breakingbad/app/data/network/api_service.dart';
 import 'package:breakingbad/app/data/network/dio_network_extension.dart';
-import 'package:breakingbad/app/ui/characters/models/character.dart';
+import 'package:breakingbad/app/data/models/dto/character.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';

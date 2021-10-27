@@ -1,4 +1,4 @@
-import 'package:breakingbad/app/ui/characters/models/character.dart';
+import 'package:breakingbad/app/data/models/dto/character.dart';
 
 class BaseResponse<T> extends GenericParser<T> {
   late bool success;

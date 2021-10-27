@@ -3,7 +3,7 @@ import 'package:breakingbad/app/ui/base/bloc_provider.dart';
 import 'package:breakingbad/app/ui/characters/detail/bloc/character_detail_bloc.dart';
 import 'package:breakingbad/app/ui/characters/detail/bloc/character_detail_event.dart';
 import 'package:breakingbad/app/ui/characters/detail/bloc/character_detail_state.dart';
-import 'package:breakingbad/app/ui/characters/models/character.dart';
+import 'package:breakingbad/app/data/models/dto/character.dart';
 import 'package:breakingbad/app/ui/widgets/error_page.dart';
 import 'package:breakingbad/resource/color_palette.dart';
 import 'package:cached_network_image/cached_network_image.dart';

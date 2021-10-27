@@ -3,7 +3,7 @@ import 'package:breakingbad/app/data/models/response/base_response.dart';
 import 'package:breakingbad/app/data/network/api_config.dart';
 import 'package:breakingbad/app/data/network/api_provider.dart';
 import 'package:breakingbad/app/data/network/api_service.dart';
-import 'package:breakingbad/app/ui/characters/models/character.dart';
+import 'package:breakingbad/app/data/models/dto/character.dart';
 
 class CharacterRepository {
   

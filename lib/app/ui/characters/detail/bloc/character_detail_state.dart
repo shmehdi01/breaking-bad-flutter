@@ -1,5 +1,5 @@
 import 'package:breakingbad/app/ui/base/base_state.dart';
-import 'package:breakingbad/app/ui/characters/models/character.dart';
+import 'package:breakingbad/app/data/models/dto/character.dart';
 
 abstract class CharacterDetailState implements BlocState {}
 
